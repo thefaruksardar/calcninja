@@ -19,6 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta
+          name="google-site-verification"
+          content="0vYFInUhgrQmSX5AUuKVL8tkMFutW8RhlPBT7JoytlE"
+        />
         <meta name="google-adsense-account" content="ca-pub-1436861775123746" />
       </head>
       <body className={`${inter.className} bg-slate-50`}>
