@@ -1,5 +1,5 @@
-import Facecategories from "@/components/facecategories";
-import Facecontainer from "@/components/facecontainer";
+import Facecategories from "@/components/lennyfaces/facecategories";
+import Facecontainer from "@/components/lennyfaces/facecontainer";
 import { faceData } from "@/libs/faces";
 import Link from "next/link";
 import { Metadata } from "next";

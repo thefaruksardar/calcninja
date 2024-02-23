@@ -1,7 +1,7 @@
-import Facecontainer from "@/components/facecontainer";
+import Facecontainer from "@/components/lennyfaces/facecontainer";
 import { notFound } from "next/navigation";
 import { faceData } from "@/libs/faces";
-import Facecategories from "@/components/facecategories";
+import Facecategories from "@/components/lennyfaces/facecategories";
 
 type paramsType = {
   faces: string;

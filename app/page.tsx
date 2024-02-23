@@ -5,7 +5,16 @@ export default function page() {
   return (
     <main className="text-center my-6">
       <p className="not-p">Available Tools:</p>
-      <Link href="/lenny-face">Lenny Face</Link>
+      <section>
+        <ul>
+          <li>
+            <Link href="/lenny-face">Lenny Face</Link>
+          </li>
+          <li>
+            <Link href="/iframe-generator">iFrame Generator</Link>
+          </li>
+        </ul>
+      </section>
     </main>
   );
 }

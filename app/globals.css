@@ -81,10 +81,11 @@ ol:not(.not-ol) {
 }
 
 a:not(.not-a) {
-  color: #3b82f6;
+  text-decoration: underline;
 }
 a:hover:not(.not-a) {
-  color: #2563eb;
+  text-decoration: none;
+  opacity: 0.85;
 }
 pre {
   background-color: #f1f1f1;
