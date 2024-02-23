@@ -6,7 +6,7 @@ export default function GoogleAnalytics() {
       {/* Adsense */}
       <Script
         async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1436861775123746"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4453732808692284"
       />
       {/* Analytics */}
       <Script
