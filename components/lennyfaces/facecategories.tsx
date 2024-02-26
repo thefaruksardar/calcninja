@@ -25,7 +25,7 @@ export default function Facecategories({
             href={
               name === "All Lenny Faces" ? "/lenny-face" : `/lenny-face/${name}`
             }
-            className={` !block !text-nowrap !text-slate-800 bg-white px-4 py-2 rounded-full border ${
+            className={` not-a !block !text-nowrap !text-slate-800 bg-white px-4 py-2 rounded-full border ${
               currentName === name ? "!bg-indigo-400 !text-white " : ""
             }`}
           >

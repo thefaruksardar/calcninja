@@ -13,6 +13,9 @@ export default function page() {
           <li>
             <Link href="/iframe-generator">iFrame Generator</Link>
           </li>
+          <li>
+            <Link href="/nickfinder">Nickfinder</Link>
+          </li>
         </ul>
       </section>
     </main>
