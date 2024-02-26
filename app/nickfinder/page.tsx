@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 export default function Page() {
   return (
-    <main>
+    <main className="lg:max-w-7xl lg:mx-auto">
       <Nickname />
       <article className=" px-4 mt-2 mb-6 bg-white py-5 rounded-3xl shadow text-slate-800">
         <h1>
