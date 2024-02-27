@@ -272,7 +272,7 @@ export default function Iframegem() {
 
       <div className="hidden  mt-5 xl:block bg-white lg:self-start shadow rounded-xl">
         <div className="flex justify-between items-center bg-violet-500 text-white px-6 py-3 rounded-t-2xl">
-          Generated Code
+          iFrame Preview{" "}
         </div>
         <div
           className="flex justify-center p-4"
