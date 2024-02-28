@@ -1,21 +1,32 @@
 import Link from "next/link";
 import React from "react";
 
+const tools = [
+  { url: "/lenny-face", title: "Lenny Face" },
+  { url: "/iframe-generator", title: "iFrame Generator" },
+  { url: "/nickfinder", title: "Nickfinder" },
+  { url: "/pearson-age-calculatorr", title: "Pearson Age Calculator" },
+  { url: "/korean-age-calculator", title: "Korean Age Calculator" },
+];
+
 export default function page() {
   return (
     <main className="text-center my-6">
-      <p className="not-p">Available Tools:</p>
-      <section>
-        <ul>
-          <li>
-            <Link href="/lenny-face">Lenny Face</Link>
-          </li>
-          <li>
-            <Link href="/iframe-generator">iFrame Generator</Link>
-          </li>
-          <li>
-            <Link href="/nickfinder">Nickfinder</Link>
-          </li>
+      <p className="not-p mb-6">
+        <strong className="font-semibold">Available Tools:</strong>
+      </p>
+      <section className="lg:max-w-4xl mx-auto">
+        <ul className="grid grid-cols-3 gap-5">
+          {tools.map((item) => (
+            <li key={item.title}>
+              <Link
+                href={item.url}
+                className="not-a bg-white py-3 rounded-xl shadow-sm block border border-transparent hover:shadow hover:border-gray-100 hover:bg-slate-50/50"
+              >
+                {item.title}
+              </Link>
+            </li>
+          ))}
         </ul>
       </section>
     </main>

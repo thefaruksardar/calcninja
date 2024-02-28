@@ -164,7 +164,7 @@ iframe {
 }
 @media (min-width: 1024px) {
   h1:not(.not-h1) {
-    font-size: 2.55rem;
+    font-size: 2rem;
   }
   h2:not(.not-h2) {
     font-size: 2rem;
