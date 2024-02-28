@@ -5,7 +5,7 @@ const tools = [
   { url: "/lenny-face", title: "Lenny Face" },
   { url: "/iframe-generator", title: "iFrame Generator" },
   { url: "/nickfinder", title: "Nickfinder" },
-  { url: "/pearson-age-calculatorr", title: "Pearson Age Calculator" },
+  { url: "/pearson-age-calculator", title: "Pearson Age Calculator" },
   { url: "/korean-age-calculator", title: "Korean Age Calculator" },
 ];
 
