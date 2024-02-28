@@ -15,8 +15,8 @@ export default function page() {
       <p className="not-p mb-6">
         <strong className="font-semibold">Available Tools:</strong>
       </p>
-      <section className="lg:max-w-4xl mx-auto">
-        <ul className="grid grid-cols-3 gap-5">
+      <section className="mx-4 lg:max-w-4xl lg:mx-auto">
+        <ul className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {tools.map((item) => (
             <li key={item.title}>
               <Link
