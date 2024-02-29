@@ -12,7 +12,7 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 import { MdShare } from "react-icons/md";
 
-export default function Share({ title }: { title: string }) {
+export default function Share({ title }: { title?: string }) {
   const [show, setShow] = useState(false);
   let [open, setOpen] = useState(false);
 

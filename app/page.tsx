@@ -8,7 +8,7 @@ const tools = [
   { url: "/pearson-age-calculator", title: "Pearson Age Calculator" },
   { url: "/korean-age-calculator", title: "Korean Age Calculator" },
   { url: "/upside-down-text", title: "Upside Down Text" },
-  { url: "/text-repeater", title: "Upside Down Text" },
+  { url: "/text-repeater", title: "Text Repeater" },
 ];
 
 export default function page() {
