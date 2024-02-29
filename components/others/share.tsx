@@ -1,18 +1,18 @@
 "use client";
 import React, { useState } from "react";
-import { IoShareOutline } from "react-icons/io5";
 import * as Dialog from "@radix-ui/react-dialog";
 import { GoCopy } from "react-icons/go";
-import { FaCheck, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
-import { FaFacebookSquare } from "react-icons/fa";
+import { FaCheck, FaReddit, FaTelegram, FaWhatsapp } from "react-icons/fa6";
+
 import {
-  FacebookShareButton,
-  LinkedinShareButton,
-  TwitterShareButton,
+  RedditShareButton,
+  TelegramShareButton,
+  WhatsappShareButton,
 } from "react-share";
 import { AnimatePresence, motion } from "framer-motion";
+import { MdShare } from "react-icons/md";
 
-export default function Share() {
+export default function Share({ title }: { title: string }) {
   const [show, setShow] = useState(false);
   let [open, setOpen] = useState(false);
 
@@ -26,23 +26,23 @@ export default function Share() {
     navigator.clipboard.writeText(url);
   };
 
-  const shareTitle = "Korean Age Calculator FREE";
+  const shareTitle = title || "https://calcninja.com";
 
-  const shareUrl = "https://calcninja.com/korean-age-calculator";
+  const shareUrl = "https://calcninja.com";
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Trigger>
-        <div className="text-xl bg-gray-100 text-gray-800 p-3 rounded-full transition-all hover:bg-blue-100">
-          <IoShareOutline />
+        <div className="text-xl text-white rounded-full transition-all hover:bg-blue-100">
+          <MdShare />
         </div>
       </Dialog.Trigger>
 
-      <Dialog.Overlay className="fixed inset-0 bg-slate-100/50" />
+      <Dialog.Overlay className="fixed inset-0 bg-slate-100/30 backdrop-blur-[1px]" />
 
       <AnimatePresence>
         {open && (
           <Dialog.Content
-            className="bg-white absolute top-14 right-3 border pb-4 pt-4 px-3 w-2/3 rounded-lg origin-top-right md:w-1/3"
+            className="bg-white absolute top-20 right-3 border pt-3 px-3  rounded-lg origin-top-right md:w-1/3"
             asChild
             forceMount
           >
@@ -51,44 +51,43 @@ export default function Share() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0, opacity: 0 }}
             >
-              <ul className="list-none flex flex-col gap-[1.15rem] text-gray-800/90">
+              <ul className="not-ul list-none flex gap-[1.15rem] text-gray-800/90">
                 <li
                   className="flex items-center gap-2 pb-4 border-b cursor-pointer"
-                  onClick={() => handleClick(shareUrl)}
+                  onClick={() => handleClick(shareTitle)}
                 >
                   {show ? (
                     <FaCheck className="text-xl" />
                   ) : (
                     <GoCopy className="text-xl" />
-                  )}{" "}
-                  Copy link
+                  )}
                 </li>
                 <li>
-                  <TwitterShareButton
+                  <TelegramShareButton
                     url={shareUrl}
                     title={shareTitle}
                     className="flex items-center gap-2"
                   >
-                    <FaSquareXTwitter className="text-2xl" /> Share on Twitter
-                  </TwitterShareButton>
+                    <FaTelegram className="text-2xl" />
+                  </TelegramShareButton>
                 </li>
                 <li>
-                  <LinkedinShareButton
+                  <RedditShareButton
                     url={shareUrl}
                     title={shareTitle}
                     className="flex items-center gap-2"
                   >
-                    <FaLinkedin className="text-2xl" /> Share on Linkedin
-                  </LinkedinShareButton>
+                    <FaReddit className="text-2xl" />
+                  </RedditShareButton>
                 </li>
                 <li>
-                  <FacebookShareButton
+                  <WhatsappShareButton
                     url={shareUrl}
                     title={shareTitle}
                     className="flex items-center gap-2"
                   >
-                    <FaFacebookSquare className="text-2xl" /> Share on Facebook
-                  </FacebookShareButton>
+                    <FaWhatsapp className="text-2xl" />
+                  </WhatsappShareButton>
                 </li>
               </ul>
             </motion.div>

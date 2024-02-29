@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { GrPowerReset } from "react-icons/gr";
-import Share from "../share";
+import Share from "../others/share";
 
 let tabs = [
   { id: "birthyear", label: "Year of Birth" },
