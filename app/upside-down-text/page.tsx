@@ -1,7 +1,7 @@
 import React from "react";
 import Upsidedown from "@/components/upsidedown/upsidedown";
 import Image from "next/image";
-import { Link } from "react-aria-components";
+import Link from "next/link";
 
 export const metadata = {
   title: "Upside Down Text [Flip Text] |  Ɔodʎ & Ԁɐsʇǝ (No Sign)",

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import { MdCheck, MdCopyAll, MdShare } from "react-icons/md";
+import { MdCheck, MdCopyAll } from "react-icons/md";
 import Share from "../others/share";
 
 export default function Repeattext() {
