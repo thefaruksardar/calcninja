@@ -9,6 +9,7 @@ const tools = [
   { url: "/korean-age-calculator", title: "Korean Age Calculator" },
   { url: "/upside-down-text", title: "Upside Down Text" },
   { url: "/text-repeater", title: "Text Repeater" },
+  { url: "/chmod-calculator", title: "Chmod Calculator" },
 ];
 
 export default function page() {
