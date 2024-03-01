@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 import { Toaster } from "react-hot-toast";
 import { Viewport } from "next";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const viewport: Viewport = {
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></Script>
         <meta name="google-adsense-account" content="ca-pub-4453732808692284" />
         <meta
           name="google-site-verification"

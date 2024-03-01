@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className="mx-4 lg:max-w-7xl lg:mx-auto">
+    <main className="mx-4 lg:max-w-4xl lg:mx-auto">
       <Iframegem />
       <article className="relative px-4 mt-2 mb-6 bg-white py-5 rounded-3xl shadow text-slate-800">
         <h1>Introducing the Ultimate iFrame Generator Tool</h1>
