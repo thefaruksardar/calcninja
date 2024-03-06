@@ -69,7 +69,7 @@ export default function Iframegem() {
     newTab?.document.close();
   };
   return (
-    <div className="lg:flex lg:gap-6 lg:justify-center">
+    <section className="lg:flex lg:gap-6 lg:justify-center">
       <div>
         <form onSubmit={handleSubmit(handleOnSubmit)}>
           <div className=" mt-5 rounded-3xl bg-white flex flex-col gap-4 px-6 py-4 shadow">
@@ -233,6 +233,7 @@ export default function Iframegem() {
               </span>
             </div>
           </div>
+
           <div className="grid grid-cols-2 my-3 gap-3">
             <button
               className="bg-rose-500 py-2 rounded-2xl text-white transition hover:scale-105 active:scale-95"
@@ -249,6 +250,7 @@ export default function Iframegem() {
             </button>
           </div>
         </form>
+
         <section className="bg-violet-50 py-3 rounded-2xl shadow mb-6">
           <div className="flex justify-between items-center bg-violet-500 text-white px-6 pt-3 pb-6 rounded-t-2xl">
             <label htmlFor="generatedcode">Generated Code</label>
@@ -283,6 +285,6 @@ export default function Iframegem() {
           }}
         ></div>
       </div>
-    </div>
+    </section>
   );
 }
