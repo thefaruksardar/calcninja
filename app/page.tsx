@@ -10,6 +10,7 @@ const tools = [
   { url: "/upside-down-text", title: "Upside Down Text" },
   { url: "/text-repeater", title: "Text Repeater" },
   { url: "/chmod-calculator", title: "Chmod Calculator" },
+  { url: "/random-group-generator", title: "Random Group Generator" },
 ];
 
 export default function page() {

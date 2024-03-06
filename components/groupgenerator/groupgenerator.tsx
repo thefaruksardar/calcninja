@@ -184,7 +184,7 @@ export default function Groupgenerator({
               </span>
             </Dialog.Trigger>
             <Link
-              href="/group-generator"
+              href="/random-group-generator"
               target="_blank"
               className="bg-rose-500 not-a text-center py-2 w-full rounded-2xl text-white transition hover:scale-105 active:scale-95"
               type="submit"
@@ -376,7 +376,7 @@ const SaveGroup = ({
           </label>
           <div className="flex items-center gap-3">
             <input
-              defaultValue={`https://calcninja.com/group-generator/${groupId}`}
+              defaultValue={`https://calcninja.com/random-group-generator/${groupId}`}
               type="text"
               id="groupurl"
               className="bg-slate-800 text-white px-5 py-4 rounded-xl"
@@ -385,7 +385,7 @@ const SaveGroup = ({
 
           <div className=" my-3 flex items-center justify-end gap-4">
             <Link
-              href={`/group-generator/${groupId}`}
+              href={`/random-group-generator/${groupId}`}
               className="not-a block cursor-pointer no-underline"
               // onClick={() => router.push(``)}
             >
@@ -397,7 +397,7 @@ const SaveGroup = ({
               type="submit"
               onClick={() => {
                 navigator.clipboard.writeText(
-                  `https://calcninja.com/group-generator/${groupId}`
+                  `https://calcninja.com/random-group-generator/${groupId}`
                 ),
                   toast.success("Link Copied");
               }}
