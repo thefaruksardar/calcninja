@@ -36,7 +36,7 @@ export default async function Page() {
         </p>
 
         <p>
-          Enter Random Group Generator – a user-friendly tool designed to
+          Enter Random Group Generator - a user-friendly tool designed to
           streamline the process of organizing groups without the hassle of
           registration or payment.
         </p>
@@ -143,7 +143,7 @@ export default async function Page() {
           for organizing teams and fostering collaboration.
         </p>
 
-        <h2>Conclusion</h2>
+        <h2>Final Words</h2>
         <p>
           In an era where teamwork and collaboration are essential for success,
           tools like Random Group Generator play a vital role in simplifying
