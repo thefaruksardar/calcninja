@@ -8,7 +8,7 @@ type paramsType = {
 };
 
 const getGroup = async (id: string) => {
-  const res = await axios(`http://localhost:3000/api/get-group?id=${id}`);
+  const res = await axios(`https://calcninja.com/api/get-group?id=${id}`);
   const data = await res.data;
   if (!data) {
     notFound();
