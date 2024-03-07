@@ -162,6 +162,9 @@ export default async function Page() {
           Say goodbye to the days of tedious group organization – with Group
           Generator, organizing teams has never been easier.
         </p>
+        <p>
+          Please share this tool with your friends so they can use it for free.
+        </p>
       </article>
     </main>
   );
